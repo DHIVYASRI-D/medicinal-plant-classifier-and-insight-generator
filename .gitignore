@@ -1,0 +1,29 @@
+# Ignore datasets and outputs
+train/
+val/
+test/
+outputs/
+
+# Python cache and environment
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.env
+*.venv
+.venv/
+
+# Jupyter cache
+*.ipynb_checkpoints/
+
+# Logs and models
+*.log
+*.pt
+*.pth
+
+# VS Code
+.vscode/
+
+# Others
+.DS_Store
