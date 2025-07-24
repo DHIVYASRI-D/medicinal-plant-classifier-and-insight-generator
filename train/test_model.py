@@ -49,4 +49,6 @@ with torch.no_grad():
         total += labels.size(0)
 
 accuracy = 100 * correct / total
+print("---------------")
 print(f"Test Accuracy on unseen data: {accuracy:.2f}%")
+print("---------------")

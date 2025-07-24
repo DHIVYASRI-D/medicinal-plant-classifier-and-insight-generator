@@ -43,4 +43,6 @@ for batch in val_dataloader:
 
 # Final result
 final_accuracy = accuracy_metric.compute()
+print("-------------------")
 print(f"Validation Accuracy: {final_accuracy['accuracy'] * 100:.2f}%")
+print("-------------------")
