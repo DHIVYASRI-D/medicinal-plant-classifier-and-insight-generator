@@ -4,6 +4,10 @@ val/
 test/
 outputs/
 
+
+mpcaig/
+
+
 # Python cache and environment
 __pycache__/
 *.pyc
