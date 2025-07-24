@@ -1,7 +1,4 @@
-# Ignore datasets and outputs
-train/
-val/
-test/
+# Ignore outputs
 outputs/
 
 
