@@ -2,7 +2,7 @@ import torch
 from torch.optim import AdamW
 from tqdm import tqdm
 from transformers import ViTForImageClassification, get_scheduler
-from data_utils.dataset import train_dataloader, val_dataloader, id2label, label2id  # make sure you import these correctly
+from data_utils.dataset_preparation import train_dataloader, val_dataloader, id2label, label2id  # make sure you import these correctly
 
 # Load model with 80 classes
 model = ViTForImageClassification.from_pretrained(
