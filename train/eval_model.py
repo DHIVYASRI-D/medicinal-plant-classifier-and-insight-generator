@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from data_utils.dataset import PlantDataset, transform
+from data_utils.dataset_preparation import PlantDataset, transform
 import torch
 from transformers import ViTForImageClassification
 from evaluate import load  # now correctly uses Hugging Face's library

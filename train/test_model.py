@@ -5,7 +5,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import torch
 from torch.utils.data import DataLoader
 from transformers import ViTForImageClassification
-from data_utils.dataset import PlantDataset  # your dataset.py script
+from data_utils.dataset_preparation import PlantDataset  # your dataset.py script
 
 
 # Paths
