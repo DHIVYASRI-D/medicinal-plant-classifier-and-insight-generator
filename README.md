@@ -14,7 +14,7 @@ The dataset includes 55 medicinal plant classes. Source: [Kaggle](https://www.ka
 ## Tech Stack
 - Vision Transformer (ViT) – Hugging Face Transformers
 - Streamlit – for frontend
-- Insight generation – using Hugging Face text models
+- Insight generation – gemini-1.5-flash
 - Deployment – researching
 
 ## Status
