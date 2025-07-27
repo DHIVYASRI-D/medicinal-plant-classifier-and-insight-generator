@@ -20,3 +20,10 @@ The dataset includes 55 medicinal plant classes. Source: [Kaggle](https://www.ka
 ## Status
 Research completed. Development starts from tomorrow onwards.
 
+---
+sdk: streamlit
+sdk_version: 1.25.0
+app_file: app.py
+---
+
+
