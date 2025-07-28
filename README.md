@@ -9,16 +9,14 @@ This project aims to build a system that:
    - Precautions
 
 ## Dataset
-The dataset includes 55 medicinal plant classes. Source: [Kaggle](https://www.kaggle.com/datasets/aryashah2k/indian-medicinal-leaves-dataset/data).
+The dataset includes 80 medicinal plant classes. Source: [Kaggle](https://www.kaggle.com/datasets/aryashah2k/indian-medicinal-leaves-dataset/data).
 
 ## Tech Stack
 - Vision Transformer (ViT) – Hugging Face Transformers
 - Streamlit – for frontend
 - Insight generation – gemini-1.5-flash
-- Deployment – researching
 
-## Status
-Research completed. Development starts from tomorrow onwards.
+
 
 ---
 sdk: streamlit
