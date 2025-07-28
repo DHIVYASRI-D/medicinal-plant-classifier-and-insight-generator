@@ -19,11 +19,11 @@ if uploaded_file is not None:
         # Predict top-3 labels
         top_labels, top_scores, label_list = get_predictions(image)
 
-        st.markdown("### 🔍 Top Predictions")
+        st.markdown("### Top Predictions")
         for i in range(3):
             st.write(f"**{i+1}. {top_labels[i]}** — Confidence: {top_scores[i]:.2%}")
 
-        st.markdown("### ✅ Is the top prediction correct?")
+        st.markdown("### Is the top prediction correct?")
         user_feedback = st.radio("Your answer:", ["Yes", "No"], horizontal=True)
 
         if user_feedback == "Yes":
@@ -32,9 +32,9 @@ if uploaded_file is not None:
             final_label = st.selectbox("Select the correct plant name:", label_list)
 
         if st.button("Generate Insights"):
-            with st.spinner(f"Fetching insights for **{final_label}** using Gemini..."):
+            with st.spinner(f"Fetching insights for **{final_label}**..."):
                 insights = generate_insight_for_plant(final_label)
-                st.markdown("### 🌿 Plant Insights")
+                st.markdown("### Plant Insights")
 
                 for section, content in insights.items():
                     st.markdown(f"#### {section}")
