@@ -84,5 +84,5 @@ Model also available at: [Hugging Face Model Hub](https://huggingface.co/dhivyas
 
 Dhivyasri D
 
-[LinkedIn](www.linkedin.com/in/dhivyasri-d) | [Hugging Face](https://huggingface.co/dhivyasri-d) 
+[LinkedIn](https://www.linkedin.com/in/dhivyasri-d/) | [Hugging Face](https://huggingface.co/dhivyasri-d) 
 
