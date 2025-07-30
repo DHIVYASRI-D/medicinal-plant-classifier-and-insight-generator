@@ -6,7 +6,7 @@ from PIL import Image
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Load model and processor
-model_path = "D:/medicinal-plant-classifier-and-insight-generator/outputs/vit-plant-classifier"
+model_path = "D:/medicinal-plant-classifier-and-insight-generator/outputs/vit-plant-push"
 processor = AutoImageProcessor.from_pretrained(model_path)
 model = AutoModelForImageClassification.from_pretrained(model_path, trust_remote_code=True).to(device)
 
