@@ -1,7 +1,7 @@
 # Ignore outputs
 outputs/
 
-
+#ignore environment files
 mpcaig/
 
 
@@ -29,5 +29,5 @@ __pycache__/
 # Others
 .DS_Store
 
-/notes.txt
+
 

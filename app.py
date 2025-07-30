@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image, UnidentifiedImageError
-from model.vit_inference import get_predictions
+from app.vit_inference import get_predictions
 from app.plant_insight_agent import generate_insight_for_plant
 from app.youtube_guides import fetch_youtube_videos
 
