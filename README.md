@@ -1,27 +1,88 @@
-# Medicinal Plant Classifier and Insight Generator
+# Medicinal Plant Classifier & Insight Generator
 
-This project aims to build a system that:
-1. Identifies medicinal plants from leaf and plant images using a fine-tuned Vision Transformer (ViT).
-2. Generates insights about the plant in 4 categories:
-   - Medicinal Uses
-   - How to Use
-   - Growing Tips
-   - Precautions
+A lightweight, locally run app that classifies Indian medicinal plants from leaf images and generates meaningful insights, recommends YouTube videos about the plant.
 
-## Dataset
-The dataset includes 80 medicinal plant classes. Source: [Kaggle](https://www.kaggle.com/datasets/aryashah2k/indian-medicinal-leaves-dataset/data).
+## Project Overview
+
+This app allows users to:
+
+* Upload a leaf image
+* Get the predicted plant class using a fine-tuned Vision Transformer (ViT)
+* Confirm or correct the plant name
+* Generate helpful plant insights using Gemini AI
+* Optionally watch relevant YouTube guides
+
 
 ## Tech Stack
-- Vision Transformer (ViT) – Hugging Face Transformers
-- Streamlit – for frontend
-- Insight generation – gemini-1.5-flash
+
+* **Model**: `google/vit-base-patch16-224-in21k` fine-tuned on the Indian Medicinal Leaf Dataset (**80 classes**)
+* **Dataset**: [Kaggle: Indian Medicinal Leaf Dataset](https://www.kaggle.com/datasets/aryashah2k/indian-medicinal-leaves-dataset) (labeled leaf images, 80 classes)
+* **Frontend**: Streamlit
+* **Image Classification**: Hugging Face Transformers (`AutoModelForImageClassification`)
+* **Insight Generation**: Google Gemini 1.5 Flash via Google AI Studio
+* **YouTube Integration**: YouTube Data API v3
 
 
+## Features
 
----
-sdk: streamlit
-sdk_version: 1.25.0
-app_file: app.py
----
+### Leaf-Based Plant Classification
 
+Upload a leaf photo -> Get prediction using a ViT model trained on medicinal plant images.
+
+### AI-Generated Plant Insights
+
+After confirming the plant, get:
+
+* Medicinal Uses
+* How to Use
+* Growing Tips
+* Precautions
+
+(Generated via Google Gemini 1.5 Flash)
+
+### YouTube Guide Finder
+
+Fetches and displays relevant YouTube guides based on the confirmed plant name.
+
+(Generated via YouTube Data API v3)
+
+## Setup Instructions
+
+> Requires Python 3.10+
+
+1. **Clone the repo**
+
+```bash
+git clone https://github.com/your-username/medicinal-plant-app.git
+cd medicinal-plant-app
+```
+
+2. **Install dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+3. **Run the app locally**
+
+```bash
+streamlit run app.py
+```
+
+4. **Use the Interface**
+
+* Upload an image
+* Confirm the plant name
+* View insights + video links
+
+## Model Access
+
+Model also available at: [Hugging Face Model Hub](https://huggingface.co/dhivyasri-d/vit-plant-classifier)
+
+
+## Created By
+
+Dhivyasri D
+
+[LinkedIn](www.linkedin.com/in/dhivyasri-d) | [Hugging Face](https://huggingface.co/dhivyasri-d) 
 
