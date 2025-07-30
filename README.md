@@ -53,8 +53,8 @@ Fetches and displays relevant YouTube guides based on the confirmed plant name.
 1. **Clone the repo**
 
 ```bash
-git clone https://github.com/your-username/medicinal-plant-app.git
-cd medicinal-plant-app
+git clone https://github.com/DHIVYASRI-D/medicinal-plant-classifier-and-insight-generator.git
+cd medicinal-plant-classifier-and-insight-generator
 ```
 
 2. **Install dependencies**
